@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #1b1b1b;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+body main {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #1b1b1b;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+body main blockquote {
+  font-weight: 500;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2vh;
+  font-size: 2.3vw;
+}
+body main .title {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+body main .title .dark-bg {
+  background-color: #202020;
+  height: auto;
+  margin-top: 2vh;
+  border-radius: 10px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.4);
+}
+body main .title h1 {
+  margin-top: 2vh;
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 800;
+  font-style: italic;
+  padding-bottom: 1vw;
+  border-bottom: 5px solid #ff9117;
+  border-radius: 10px;
+}
+body main .title .gollumeo {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8vh;
+  margin-bottom: 2vh;
+  border-radius: 50px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.4);
+  padding-bottom: 2vh;
+  background-color: #1b1b1b;
+}
+body main .title .gollumeo img {
+  margin-top: 1.5vh;
+  width: 10vw;
+  border-radius: 50%;
+  border: 2px solid #ff9117;
+}
+body main .title .button {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+body main .title .button #generate-quote {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 25%;
+  height: 5%;
+  border-radius: 12px;
+  font-weight: 600;
+  background-color: #242527;
+  color: #fff;
+  border-color: #ff9117;
+  transform: scale(1);
+  box-shadow: inset 0px 0px 4px #1b1b1b, 0 0px 8px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 0.5s;
+  letter-spacing: 0.5px;
+  font-size: 1.5vw;
+  padding: 1vh 0;
+  align-items: center;
+}
+body main .title .button #generate-quote:hover {
+  background-color: #ff9117;
+  color: #1b1b1b;
+  transform: scale(1.05);
+  box-shadow: inset 0px 0px 10px #202020, 0 0px 8px rgba(0, 0, 0, 0.4);
+  transition: all ease-in-out 0.5s;
+}
+body main #quote {
+  opacity: 0;
+  width: 75%;
+  margin: 0 auto;
+  background-color: #1b1b1b;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  border-radius: 50px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.4);
+  padding-bottom: 2vh;
+  gap: 1vh;
+  background-color: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+}
+body main #quote .img {
+  min-width: 10vw;
+  min-height: 10vw;
+  max-width: 15vw;
+  max-height: 15vw;
+  margin: 0 auto;
+  margin-top: 2vh;
+}
+body main #quote .img img {
+  margin-top: 1.5vh;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border: 2px solid #ff9117;
+  margin: 0 auto;
+}
+body main .author {
+  font-style: italic;
+  text-align: center;
+  line-height: 8vh;
+  border-top: 1px solid;
+  border-color: #ff9117;
+  width: auto;
+  border-radius: 20px;
+  padding: 0 2.5%;
+  margin: 0 auto;
+  text-transform: capitalize;
+  font-size: 2.3vw;
+}
+
+.center {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, #337ab7, #fff);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+  display: none;
+}
+
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}/*# sourceMappingURL=style.css.map */

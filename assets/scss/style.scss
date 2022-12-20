@@ -1,0 +1,250 @@
+$black_method: #121212;
+$orange_method: #ff9117;
+$blue_method: #337ab7;
+$light_black_method: #1b1b1b;
+$dark_bg: #202020;
+$method_greyish: #242527;
+$box-shadow: 0 0px 8px rgba(0, 0, 0, .4);
+$montserrat: 'Montserrat Alternates',
+sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: $montserrat;
+}
+
+body {
+    background-color: $black_method;
+    color: $light_black_method;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: #fff;
+
+    main {
+        width: 90%;
+        margin: 0 auto;
+        min-height: 100vh;
+        background-color: $light_black_method;
+        box-shadow: $box-shadow;
+        border-radius: 8px;
+
+        blockquote {
+            font-weight: 500;
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 2vh;
+            font-size: 2.3vw;
+        }
+
+        .title {
+            width: 75%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+
+            .dark-bg {
+                background-color: $dark_bg;
+                height: auto;
+                margin-top: 2vh;
+                border-radius: 10px;
+                box-shadow: $box-shadow;
+            }
+
+            h1 {
+                margin-top: 2vh;
+                text-align: center;
+                font-size: 3vw;
+                font-weight: 800;
+                font-style: italic;
+                padding-bottom: 1vw;
+                border-bottom: 5px solid $orange_method;
+                border-radius: 10px;
+            }
+
+            .gollumeo {
+                margin-top: 2vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: .8vh;
+                margin-bottom: 2vh;
+                border-radius: 50px;
+                box-shadow: $box-shadow;
+                padding-bottom: 2vh;
+                background-color: $light_black_method;
+
+                img {
+                    margin-top: 1.5vh;
+                    width: 10vw;
+                    border-radius: 50%;
+                    border: 2px solid $orange_method;
+                }
+            }
+
+            .button {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+                // vertical-align: middle;
+
+                #generate-quote {
+                    position: relative;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 25%;
+                    height: 5%;
+                    border-radius: 12px;
+                    font-weight: 600;
+                    background-color: $method_greyish;
+                    color: #fff;
+                    border-color: $orange_method;
+                    transform: scale(1);
+                    box-shadow: inset 0px 0px 4px $light_black_method,
+                        $box-shadow;
+                    transition: all ease-in-out .5s;
+                    letter-spacing: .5px;
+                    font-size: 1.5vw;
+                    padding: 1vh 0;
+                    // justify-content: center;
+                    align-items: center;
+
+                    &:hover {
+                        background-color: $orange_method;
+                        color: $light_black_method;
+                        transform: scale(1.05);
+                        box-shadow: inset 0px 0px 10px $dark_bg,
+                            $box-shadow;
+                        transition: all ease-in-out .5s;
+                    }
+                }
+            }
+        }
+
+        #quote {
+            opacity: 0;
+            width: 75%;
+            margin: 0 auto;
+            background-color: $light_black_method;
+            box-shadow: $box-shadow;
+            border-radius: 8px;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+            border-radius: 50px;
+            box-shadow: $box-shadow;
+            padding-bottom: 2vh;
+            gap: 1vh;
+            background-color: $light_black_method;
+            display: flex;
+            flex-direction: column;
+
+            .img {
+                min-width: 10vw;
+                min-height: 10vw;
+                max-width: 15vw;
+                max-height: 15vw;
+                margin: 0 auto;
+                margin-top: 2vh;
+
+                img {
+                    margin-top: 1.5vh;
+                    width: 10vw;
+                    height: 10vw;
+                    border-radius: 50%;
+                    border: 2px solid $orange_method;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .author {
+            font-style: italic;
+            text-align: center;
+            line-height: 8vh;
+            border-top: 1px solid;
+            border-color: $orange_method;
+            width: auto;
+            border-radius: 20px;
+            padding: 0 2.5%;
+            margin: 0 auto;
+            text-transform: capitalize;
+            font-size: 2.3vw;
+
+        }
+    }
+}
+
+.center {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.wave {
+    width: 5px;
+    height: 100px;
+    background: linear-gradient(45deg, $blue_method, #fff);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+    display: none;
+}
+
+.wave:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.wave:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.wave:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.wave:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.wave:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.wave:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.wave:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.wave:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.wave:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
